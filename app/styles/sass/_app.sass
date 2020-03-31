@@ -1,0 +1,91 @@
+.app
+  padding: 3.2rem 2rem 0
+  &__title
+    +opensans_bold
+    text-align: center
+    font-size: 3.6rem
+    margin-bottom: 2.5rem
+  &__line
+    width: 100%
+    height: 0.1rem
+    background-color: $color-dark
+    border: none
+    border-radius: 0.1rem
+    margin-bottom: 2.6rem
+  &__note
+    width: 60%
+    border: 0.1rem solid $color-dark
+    border-radius: 0.5rem
+    overflow: hidden
+    margin: 0 auto 2rem
+    box-sizing: border-box
+    &-top
+      margin-bottom: 1rem
+      padding: 1rem 0.5rem
+      background-color: $color-bg-main
+      border-bottom: 0.1rem solid rgba($color-black, 0.2)
+      box-sizing: border-box
+      display: flex
+      justify-content: space-between
+    &-title
+      width: 70%
+      padding: 0.35rem 0.8rem 0
+      p
+        display: block
+        width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+        +opensans_semibold
+        font-size: 1.6rem
+        // text-align: center
+        white-space: nowrap
+    &-elements
+      display: flex
+      align-items: center
+      margin: 0 1rem 0 1.5rem
+    &-element
+      transition: 0.1s
+      svg
+        width: 100%
+        height: 100%
+      &:hover
+        cursor: pointer
+      &:active
+        transform: translateY(0.06rem)
+      &_edit
+        width: 1.8rem
+        height: 1.8rem
+        margin-right: 2rem
+      &_close
+        width: 1.2rem
+        height: 2.2rem
+    &-todoItem
+      display: flex
+      align-items: center
+      padding: 0.5rem 1rem 0.6rem
+      border-bottom: 0.1rem solid $color-grey
+      // margin: 0 auto 0.6rem
+      &_input
+        display: block
+        width: 1.4rem
+        height: 1.4rem
+        margin-right: 1rem
+      &_label
+        display: block
+        +opensans_regular
+        font-size: 1.4rem
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        width: 90%
+      &_ellipsis
+        +opensans_semibold
+        font-size: 1.5rem
+        margin-bottom: 1rem
+        p
+          text-align: center
+
+  &__btn
+    &_add-note
+      margin: 0 auto 3rem
+
