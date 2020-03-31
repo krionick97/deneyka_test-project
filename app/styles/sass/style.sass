@@ -19,30 +19,31 @@ html
   font-size: 10px
 
 body
-  color: $color-dark
 
-.btn
-  display: block
-  background-color: $color-green
-  border-radius: 0.3rem
-  color: $color-white
-  +opensans_bold
-  border: none
-  font-size: 1.8rem
-  outline: none
-  transition: 0.1s
-  &:hover
-    cursor: pointer
-  &:active
-    box-shadow: inset 0 0.1rem 0.8rem rgba($color-black, 0.5)
-    transform: translateY(0.1rem)
+.font
+  font-size: 3rem
+  margin-bottom: 1rem
 
-@import 'app'
-@import 'note'
+.BerlingskeSerif
+  &-BlkItalic
+    +berlingskeSerif_blkItalic
+  &-BoldItalic
+    +berlingskeSerif_boldItalic
+  &-italic
+    +berlingskeSerif_italic
+  &-LtItalic
+    +berlingskeSerif_ltItalic
+  &-MdItalic
+    +berlingskeSerif_mdItalic
 
-// .check
-//   input:checked + label > svg
-//     display: block
-
+.GothamPro
+  &-Bold
+    +gothamPro_bold
+  &-Light
+    +gothamPro_light
+  &-Medium
+    +gothamPro_medium
+  &-Regular
+    +gothamPro_regular
 
 
